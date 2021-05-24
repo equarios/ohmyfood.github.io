@@ -153,6 +153,18 @@ body{
 }
 
 
+.explorebtn:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+ }
+
+ @keyframes slidebg {
+    100% {
+      background-position: 50vw;
+    }
+  }
+
+
 .worktitle {
     margin: 46px 0px 20px 20px;
     font-size: 24px;
@@ -183,6 +195,11 @@ body{
     cursor: grabbing;
 }
 
+.workbtn:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
+}
+
 .workpurpbtn {
     display: flex;
     width: 95%;
@@ -197,6 +214,11 @@ body{
     margin: 16px 0px 4px 0px;
     font-weight: 600;
     cursor: grabbing;
+}
+
+.workpurpbtn:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
 }
 
 .workpurpbtn .workfoodicon {
@@ -321,6 +343,11 @@ body{
     border-radius: 2px;
     background: #99E2D0;
     
+}
+
+.resnewbtn:hover{
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    animation:slidebg 5s linear infinite;
 }
 
 
