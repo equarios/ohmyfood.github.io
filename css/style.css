@@ -746,3 +746,22 @@ body{
     background: #f6f6f6;
     padding: 48px 48px 55px 48px;
 }
+
+@media (max-width: 768px){
+    .rescont{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
+    .restitle{
+        padding-left: 50px;
+    }
+
+    .resitems{
+        margin-left: 50px;
+    }
+    
+
+}
