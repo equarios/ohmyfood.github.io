@@ -10,10 +10,6 @@ body{
 
 
 
-
-
-
-
 .pageblockcont {
     
     animation: cssAnimation 1s forwards;
@@ -41,6 +37,15 @@ body{
     z-index: 1;
 }
 
+.loadanimtxt {
+    position: absolute;
+    top: 28%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+    color: #FF79DA;
+    
+}
 .loadanim {
     position: absolute;
     top: 40%;
@@ -90,6 +95,33 @@ body{
     position: relative;
     
   }
+
+  .headr2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, .6);
+    
+  }
+
+  .headr2 img{
+      margin-right: 80px;
+      width: 170px;
+      height: 35px;
+  }
+
+  .navarrow{
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      font-size: 20px;
+      color: initial;
+    }
+
+
 
   .headlogo{
     width: 300px;
@@ -153,16 +185,9 @@ body{
 }
 
 
-.explorebtn:hover{
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-    animation:slidebg 5s linear infinite;
- }
-
- @keyframes slidebg {
-    100% {
-      background-position: 20vw;
-    }
-  }
+.explorebtn:hover {
+    box-shadow: 0 10px 20px -9px #9356DC;
+}
 
 
 .worktitle {
@@ -195,9 +220,8 @@ body{
     cursor: grabbing;
 }
 
-.workbtn:hover{
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-    animation:slidebg 5s linear infinite;
+.workbtn:hover {
+    box-shadow: 0 10px 20px -9px #9356DC;
 }
 
 .workpurpbtn {
@@ -216,9 +240,8 @@ body{
     cursor: grabbing;
 }
 
-.workpurpbtn:hover{
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-    animation:slidebg 5s linear infinite;
+.workpurpbtn:hover {
+    box-shadow: 0 10px 20px -9px #9356DC;
 }
 
 .workpurpbtn .workfoodicon {
@@ -345,11 +368,9 @@ body{
     
 }
 
-.resnewbtn:hover{
-    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-    animation:slidebg 5s linear infinite;
+.resnewbtn:hover {
+    box-shadow: 0 10px 20px -9px #9356DC;
 }
-
 
 
 .hrt {
@@ -399,15 +420,53 @@ body{
 
 @media (min-width: 1080px){
 
+    .loadanimtxt {
+        position: absolute;
+        top: 38%;
+        left: 43%;
+        display: flex;
+        align-items: center;
+        color: #FF79DA;
+        
+    }
+
 
     .loadanim {
-        top: 50%;
+        top: 60%;
         left: 45%;
     }
+
+
+    .headr2{
+        padding: 15px;
+        background: white;
+        box-shadow: 0 3px 10px -6px rgba(0, 0, 0, .5);
+        position: relative;
+        
+      }
+    
+      .headr2 img{
+        display: flex;
+        padding-top: 5px;
+        margin: auto;
+        height: 50px;
+        width: 250px;
+      }
+    
+      .navarrow{
+        position: absolute;
+        margin: 8px;
+        font-size: 18px;
+        color: darkslategray;
+        }
+
+
+
 
     .menuhead{
         background-color: white;
     }
+
 
     .menutitle{
         margin-top: 25px;
@@ -474,7 +533,7 @@ body{
 
     .resnewbtn {
 
-         margin-top: -180px; 
+         margin-top: -230px; 
           
       }
       
@@ -483,13 +542,14 @@ body{
 
     .resitems {
         margin: 0px 20px 20px 20px;
+
     }
 
 
 
     
     .resitemc {
-        height: 200px;
+        height: 250px;
         width: 300px;
         object-fit: fill;
         
@@ -505,4 +565,184 @@ body{
         font-weight: 100;
       }
 
+}
+
+
+/*other pages css*/
+
+.menu-background-image img {
+    max-height: 18rem;
+}
+
+.respagesimg img{
+    height: 250px;
+    width: 100%;
+    position: relative;
+    object-fit: cover;
+    image-rendering: pixelated;
+    z-index: -1;
+   
+}
+
+.respagescont {
+    background-color: #f0f0f0;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -57px;
+}
+
+.respagestitle {
+    padding: 28px 16px 8px 20px;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: 'Shrikhand', cursive;
+}
+
+.menucatlogcont{
+    display: flex;
+    flex-direction: column;
+    animation: 1s fadeIn ease-out;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px)
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.catlogtitle {
+    padding: 20px 16px 20px 16px;
+    font-weight: 350;
+}
+
+.catlogline{
+        border-top: 3px solid #99E2D0;
+        width: 50px;
+        margin: -15px 0px 16px 16px;
+}
+
+.catlogitemcont {
+    margin: 10px 12px;
+    align-items: stretch;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px -8px rgba(0, 0, 0, .5);
+    
+}
+
+.catlogitemcont:hover{
+    cursor: pointer;
+}
+
+.catcontent{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    
+}
+
+.itemtitle{
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 3px;
+    margin-right: 5px;
+    margin: 10px 0px 0px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.itemdetail{
+    display: flex;
+    margin-right: 5px;
+    justify-content: space-between;
+    margin: 5px 20px 10px 10px;
+    
+}
+
+.itmname{
+    font-size: 15px;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.iconcnt {
+    align-items: center;
+    background-color: #99E2D0;
+    display: flex;
+    justify-content: center;
+}
+
+.catlogicon {
+    align-items: center;
+    color: #fff;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.iconcnt {
+    overflow: hidden;
+    width: 0;
+
+}
+
+.catlogitemcont:hover .iconcnt{
+    padding: 0 30px;
+    width: 20px;
+    
+}
+
+.iconcnt {
+    transition: all 0.55s;
+}
+
+.catlogitemcont:hover .spn {
+    transition: .5s;
+    transform: rotate(360deg);
+}
+
+
+.ordbtn:hover {
+    cursor: pointer;
+}
+
+.ordbtn {
+    padding: 16px 70px;
+    color: white;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 3px 20px -9px rgba(0, 0, 0, .5);
+    transform: translateY(-9px);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.ordbtncont {
+    display: flex;
+    justify-content: center;
+    background: #f6f6f6;
+    padding: 48px 48px 55px 48px;
 }
